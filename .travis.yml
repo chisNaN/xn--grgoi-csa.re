@@ -1,5 +1,4 @@
-language: ruby
-sudo: false
+language: javascript
 deploy:
   provider: s3
   skip_cleanup: true
