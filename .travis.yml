@@ -1,0 +1,11 @@
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  bucket: xn--grgoi-csa.re
+  region: us-west-2
+  acl: public_read
+  skip_cleanup: true
+notifications:
+  email:
+     on_failure: always
