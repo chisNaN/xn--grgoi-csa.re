@@ -1,4 +1,6 @@
-language: php
+language: ruby
+rvm:
+  - 1.9.3
 deploy:
   provider: s3
   skip_cleanup: true
@@ -9,6 +11,9 @@ deploy:
   acl: public_read
   on:
     repo: agreg0ire/xn--grgoi-csa.re
+matrix:
+  allow_failures:
+    - rvm: 1.9.3
 notifications:
   email:
     on_failure: always
