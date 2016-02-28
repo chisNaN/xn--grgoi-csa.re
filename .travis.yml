@@ -1,12 +1,13 @@
 language: ruby
 deploy:
   provider: s3
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
+  access_key_id: AKIAJABS7MO26EARDFFA
+  secret_access_key:
+    secure: n+7p5LfRw5zUuXL1K5nOF8Jffzzer5mVa+HcrI0BfA1KqPPqksFUnzUWXALgb9NZrle4xa4X9MOH0dmaFeoQiCwntjmCX/rYER3AyUcjR2JhO0KBb7h65Y7Xo1nstfoPBpDaG+2IkT41sKvv+o7rhLqbD2yBVNjrQR+zWMnjY45utFoTT5z5HX/zhbJhqnRVJWXbhUf7T7/Zp+dTBIJpvgbvmZIlczGLyYIr7uNx0yEow6zCN6kzdu7b/cptNK0fqJpj4MiDw99e3mGnwg5wIhLnxt3elKdoY8Iw8gE7/X1dMd/mVXxQwjTZXBfnbuEZ6mAtI2Iwo5DNruSTtFxDEdIITm7Z7yFCnUiT2ArUN8Tw4P3aLSCxqK6Xj5bNZnI2s5IVZsrXOr+2eVM/zKLXQYcVzHXcF/fOmKQ2WMefTP2JBD6ZJpzqGkKI5eCMiYPfiXZmFXRmF4I3oHewWI3yhb/RKwhdCfFpu3TQlI52lm3WTMkhZUscUFYd5FauzVGOHcOZFYMLwllWO0BMVxMK/2Qa5CqnzaCKAOTjZC4yKGpZDgr6bzSf9Ytm/L4D404XMEQmqjj9K541MYFbPiRdN2k0q413GtDZF60ViFUKPCqZfyUporothLRyHEe2zj1dB4PXytA49RexjxK+U9Kl0FA++Blv6vPxHGTZmSoaLVw=
   bucket: xn--grgoi-csa.re
-  region: us-west-2
   acl: public_read
-  skip_cleanup: true
+  on:
+    repo: agreg0ire/xn--grgoi-csa.re
 notifications:
   email:
-     on_failure: always
+    on_failure: always
