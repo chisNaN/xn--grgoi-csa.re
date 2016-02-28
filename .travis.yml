@@ -1,9 +1,7 @@
-language: node_js
-cache:
-  directories:
-  - node_modules
-install:
-  - npm i
+language: php
+install: true
+script:
+  -
 before_deploy:
   - rvm 1.9.3 do gem install aws-sdk -v 2.1.36
 deploy:
