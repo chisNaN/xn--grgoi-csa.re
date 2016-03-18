@@ -1,9 +1,6 @@
 language: php
 install: true
-script:
-  -
-before_deploy:
-  - rvm 1.9.3 do gem install aws-sdk -v 2.1.36
+script: true
 deploy:
   provider: s3
   skip_cleanup: true
@@ -14,7 +11,6 @@ deploy:
   on:
     repo: agreg0ire/xn--grgoi-csa.re
   region: us-west-2
-  endpoint: xn--grgoi-csa.re.s3-website-us-west-2.amazonaws.com
 notifications:
   email:
     on_failure: always
