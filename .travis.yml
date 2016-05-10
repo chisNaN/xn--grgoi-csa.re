@@ -6,7 +6,7 @@ deploy:
   skip_cleanup: true
   access_key_id: $AWS_ACCESS_ID
   secret_access_key: $AWS_SECRET_KEY
-  bucket: xn--grgoi-csa.re
+  bucket: www.xn--grgoi-csa.re
   acl: public_read
   on:
     repo: agreg0ire/xn--grgoi-csa.re
