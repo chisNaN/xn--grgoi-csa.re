@@ -9,7 +9,7 @@ deploy:
   bucket: www.xn--grgoi-csa.re
   acl: public_read
   on:
-    repo: agreg0ire/xn--grgoi-csa.re
+    repo: chisNaN/xn--grgoi-csa.re
   region: us-west-2
 notifications:
   email:
